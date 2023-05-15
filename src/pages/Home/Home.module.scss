@@ -1,0 +1,46 @@
+@use './../../variables' as variables;
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  font-family: variables.$font-stack;
+}
+.container__header {
+  font-family: variables.$font-stack;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__ {
+  &title {
+    font-size: 2.5rem;
+  }
+  &description {
+    font-size: 0.9rem;
+  }
+}
+
+.container__button {
+  padding: 10px 0;
+  width: 20%;
+  background-color: variables.$btn-color;
+  border: none;
+  color: white;
+  font-family: variables.$font-stack;
+  font-size: 1.2rem;
+  font-weight: 500;
+  min-width: 155px;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.75;
+  }
+}

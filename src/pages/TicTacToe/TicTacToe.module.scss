@@ -1,0 +1,69 @@
+@use './../../variables' as variables;
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  top: 75px;
+  gap: 40px;
+  width: 100%;
+  position: absolute;
+  padding: 0 8px;
+}
+.container__box {
+  height: 80vh;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: rgb(95, 95, 95);
+  gap: 2px;
+}
+.container__options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.option {
+  padding: 10px 30px;
+  background-color: variables.$btn-color;
+  border: none;
+  color: white;
+  font-family: variables.$font-stack;
+  font-size: 1rem;
+  font-weight: 500;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.75;
+  }
+  &:disabled {
+    cursor: default;
+    opacity: 0.75;
+  }
+}
+.container__back {
+  position: absolute;
+  font-size: 2rem;
+  left: 20px;
+  top: 25px;
+  color: variables.$btn-back-color;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}
+.header {
+  font-family: variables.$font-stack;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.player {
+  height: 20%;
+  width: 100%;
+  background-color: rgb(219, 219, 219);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: variables.$font-stack;
+  font-size: 2.5rem;
+}
